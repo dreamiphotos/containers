@@ -56,6 +56,7 @@ RUN rm /venv/bin/ffmpeg
 
 ADD relauncher.py .
 ADD start.sh /start.sh
+ADD run.ipynb run.ipynb
 RUN chmod a+x /start.sh
 SHELL ["/bin/bash", "--login", "-c"]
 CMD [ "/start.sh" ]
